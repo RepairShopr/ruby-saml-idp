@@ -2,6 +2,7 @@
 class SamlIdp::IdpController < ActionController::Base
   include SamlIdp::Controller
 
+
   protect_from_forgery
 
   before_filter :validate_saml_request
